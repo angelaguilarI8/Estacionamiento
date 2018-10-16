@@ -213,6 +213,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810152154110_InitialCreate.cs" />
+    <Compile Include="Migrations\201810152154110_InitialCreate.Designer.cs">
+      <DependentUpon>201810152154110_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810152159278_RolId.cs" />
+    <Compile Include="Migrations\201810152159278_RolId.Designer.cs">
+      <DependentUpon>201810152159278_RolId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810152209077_RolId1.cs" />
+    <Compile Include="Migrations\201810152209077_RolId1.Designer.cs">
+      <DependentUpon>201810152209077_RolId1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810152323494_Nombre.cs" />
+    <Compile Include="Migrations\201810152323494_Nombre.Designer.cs">
+      <DependentUpon>201810152323494_Nombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810152325087_Apellido.cs" />
+    <Compile Include="Migrations\201810152325087_Apellido.Designer.cs">
+      <DependentUpon>201810152325087_Apellido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -298,6 +319,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810152154110_InitialCreate.resx">
+      <DependentUpon>201810152154110_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810152159278_RolId.resx">
+      <DependentUpon>201810152159278_RolId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810152209077_RolId1.resx">
+      <DependentUpon>201810152209077_RolId1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810152323494_Nombre.resx">
+      <DependentUpon>201810152323494_Nombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810152325087_Apellido.resx">
+      <DependentUpon>201810152325087_Apellido.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

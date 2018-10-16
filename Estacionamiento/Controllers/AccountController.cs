@@ -156,7 +156,7 @@ namespace Estacionamiento.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, RolId=model.RolId, Nombre=model.Nombre, Apellido=model.Apellido};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

@@ -70,6 +70,16 @@ namespace Estacionamiento.Models
         public string Email { get; set; }
 
         [Required]
+        [StringLength(15)]
+        [Display(Name = "Nombre")]
+        public string Nombre { get; set; }
+
+        [Required]
+        [StringLength(25)]
+        [Display(Name = "Apellido")]
+        public string Apellido { get; set; }
+
+        [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Contraseña")]
