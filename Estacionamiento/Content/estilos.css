@@ -19,4 +19,10 @@ p {
 		background-color:maroon;
 		 opacity:0.7;
      }
+#e {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
 
