@@ -1,17 +1,63 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+	ViewBag.Title = "Contacto";
+
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<br />
+<br />
+<br />
+<br />
+<div>
+	<div class="features-row">
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+		<section>
+			<span><img src="~/Content/Estacionamiento.jpg" height="400" width="1000" alt="" id="imagen" /></span>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+		</section>
+	</div>
+
+	<section class="box special features">
+
+		<div class="features-row">
+			<section>
+				<span><img src="~/Content/logo.jpg" height="200" width="400" alt="" /></span>
+				<h3>Precio 1ra hora $26</h3>
+				<p>Precio de la pensión: $1950 IVA INCLUIDO</p>
+				<p>Tarifa Maxima 12hrs: $120</p>
+				<p>Tarifa Maxima 24hrs: $280</p>
+				<p>Boleto perdido: $180</p>
+				<p>Todos los dias las 24 horas</p>
+				<p><a href="https://localhost:44367/Home/About" class="btn btn-primary btn-lg">Ir a &raquo;</a></p>
+
+			</section>
+			<section>
+				<span><img src="~/Content/logo2.jpg" height="200" width="400" alt="" /></span>
+				<h3>Precio 2da hora $35</h3>
+				<p>Precio de la pensión: $2500 IVA INCLUIDO</p>
+				<p>Tarifa Maxima 12hrs: $180</p>
+				<p>Tarifa Maxima 24hrs: $240</p>
+				<p>Boleto perdido: $180</p>
+				<p>Todos los dias las 24 horas</p>
+				<p><a href="https://localhost:44367/Home/About" class="btn btn-primary btn-lg">Ir a &raquo;</a></p>
+
+			</section>
+		</div>
+	</section>
+</div>
+
+
+
+
+
+<script type='text/javascript' src='www.bing.com/api/maps/mapcontrol?callback-GetMap&key=At28st14c2QZF7J71NgHUHlIq63197Nu_aSxDn7hy4ujcGgTgI7BmWe_6L_vE7QX&setMkt=es-MX&setLang=es' async defer>
+	<div id="myMap" style='position:relative;width:600px;height:400px;></div>
+<script type='text/javascript'>
+function GetMap(){
+var map = new Microsoft.Maps.Map('#myMap',{
+credentials: 'Asw9-cNbmmDv7zqWXB',
+center: new Microsoft.Maps.Location(19.409116,-99.317112),
+mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+zomm: 18,
+showBreadcrumb: true
+});
+</script>
+

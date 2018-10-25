@@ -2,49 +2,54 @@
 @using Microsoft.AspNet.Identity.EntityFramework;
 
 @{
-
-
 	ViewBag.Title = "Estacionamiento";
 
-
 }
-
+<br />
+<br />
+<br />
+<br />
 
 <div class="jumbotron">
 	<h1><img src="~/Content/esta.png" width="80" height="80" id="e">Bienvenidos @ViewBag.nom @ViewBag.ape</h1>
 	<p class="lead">Le brindamos seguridad a su vehiculo</p>
-	<p><a href="https://localhost:44367/Home/Index" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-	<div class="col-md-4">
-		<h2>Mision: </h2>
-		<p>
-			Brindar cada día un servicio de excelencia que supere las expectativas de nuestros clientes. 
-		</p>
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+	<!--<p><a href="https://localhost:44367/Home/Index" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
 	</div>
-	<div class="col-md-4">
-		<h2>Vision</h2>
-		<p>
-			Visión:
-			Ser el mejor prestador de servicios de estacionamientos del mercado, esforzándonos por ofrecer siempre un valor agregado a nuestros clientes.
-		</p>
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Mision: </h2>
+			<p>
+				Brindar cada día un servicio de excelencia que supere las expectativas de nuestros clientes.
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>Vision:</h2>
+			<p>
+				Ser el mejor prestador de servicios de estacionamientos del mercado, esforzándonos por ofrecer siempre un valor agregado a nuestros clientes.
+			</p>
+		</div>
+
+		@if (ViewBag.rol == "Admin")
+		{
+
+		<div class="col-md-4">
+			<h2>Valores: </h2>
+			<il>
+				<ol>Integridad</ol>
+				<ol>Respeto</ol>
+				<ol>Calidad</ol>
+				<ol>Lealtad</ol>
+				<ol>Agradacemiento</ol>
+			</il>
+			
+
+
+		</div>
+		}
+		</div>
+	<div class="jumbotron">
+		<h1>Somos</h1>
+		<p class="lead">Trabajamos para garantizar el patrimonio de nuestro clientes: instalaciones, centros comerciales, edificios corporativos o predios para estacionamientos.</p>
+		<p>Somos atención y supervisión 24/7.</p>
 	</div>
-	@if(ViewBag.rol == "Admin")
-	{
-
-
-	<div class="col-md-4">
-		<h2>Valores: </h2>
-		<p>Integridad</p>
-		<p>Respeto</p>
-		<p>Calidad</p>
-		<p>Lealtad</p>
-		<p>Agradacemiento</p>
-
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-	</div>
-	}
-</div>

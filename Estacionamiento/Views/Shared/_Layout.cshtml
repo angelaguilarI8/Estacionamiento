@@ -8,6 +8,7 @@
 	@Styles.Render("~/Content/css")
 	@Styles.Render("~/Content/estilos.css")
 	@Scripts.Render("~/bundles/modernizr")
+	@Styles.Render("~/Content/main.css")
 
 </head>
 <body>
@@ -15,19 +16,18 @@
     <div class="navbar navbar-inverse navbar-fixed-top" id="menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
                 @Html.ActionLink("Anbrera", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+					<li>@Html.ActionLink("Estacionamientos", "Contact", "Home")</li>
+				</ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -35,9 +35,14 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Tecnologico de Estudio Superiores Huixquilucan</p>
-        </footer>
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Tecnologico de Estudio Superiores Huixquilucan</p>
+			<p>Paraje del rio
+			Huixquilucan, Estado de México
+			Magdalena Chichicaspa, CP 52773</p>
+
+
+		</footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
