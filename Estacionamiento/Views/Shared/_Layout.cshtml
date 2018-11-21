@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@ViewBag.Title -Estacionamiento</title>
 	@Styles.Render("~/Content/css")
-	@Styles.Render("~/Content/estilos.css")
 	@Scripts.Render("~/bundles/modernizr")
 	@Styles.Render("~/Content/main.css")
+
 
 </head>
 <body>
 	
-    <div class="navbar navbar-inverse navbar-fixed-top" id="menu">
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,7 +26,13 @@
             <div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-					<li>@Html.ActionLink("Estacionamientos", "Contact", "Home")</li>
+					<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+					<li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+					<li>@Html.ActionLink("Estacionamiento", "Est", "Home")</li>
+					@if(Request.IsAuthenticated) {
+					<li>@Html.ActionLink("Ingreso", "Index", "Estacionamientos")</li>
+					}
+
 				</ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -37,10 +43,7 @@
         <hr />
 		<footer>
 			<p>&copy; @DateTime.Now.Year - Tecnologico de Estudio Superiores Huixquilucan</p>
-			<p>Paraje del rio
-			Huixquilucan, Estado de México
-			Magdalena Chichicaspa, CP 52773</p>
-
+			
 
 		</footer>
     </div>

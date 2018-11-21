@@ -43,5 +43,14 @@ namespace Estacionamiento.Controllers
 
             return View();
         }
+        public ActionResult Est()
+        {
+
+            return View();
+        }
+        public ActionResult EstacionamientoH()
+        {
+            return View();
+        }
     }
 }

@@ -208,6 +208,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EstacionamientosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -235,6 +236,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Estacionamientos.cs" />
+    <Compile Include="Models\EstacionamientosDB.cs" />
+    <Compile Include="Models\EstacionamientosInitializer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,6 +261,8 @@
     <Content Include="Content\logo.jpg" />
     <Content Include="Content\logo2.jpg" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\Tesh.jpg" />
+    <Content Include="Content\Tesh2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -284,7 +290,9 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\util.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -319,10 +327,17 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Sitio.cshtml" />
-    <Content Include="Views\Home\Huixqui.cshtml" />
+    <Content Include="Views\Home\Est.cshtml" />
+    <Content Include="Views\Home\EstacionamientoH.cshtml" />
+    <Content Include="Views\Estacionamientos\Create.cshtml" />
+    <Content Include="Views\Estacionamientos\Delete.cshtml" />
+    <Content Include="Views\Estacionamientos\Details.cshtml" />
+    <Content Include="Views\Estacionamientos\Edit.cshtml" />
+    <Content Include="Views\Estacionamientos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Vistas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
