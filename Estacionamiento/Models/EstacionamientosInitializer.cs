@@ -16,7 +16,7 @@ namespace Estacionamiento.Models
                 new Estacionamientos
 
                 {
-                    Fecha = DateTime.Today,
+                    Fecha = DateTime.Now,
                     Nivel = 2,
                     Placas = "asd3-we3",
 

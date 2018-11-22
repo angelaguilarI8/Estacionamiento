@@ -7,7 +7,7 @@
 	<title>@ViewBag.Title -Estacionamiento</title>
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
-	@Styles.Render("~/Content/main.css")
+	
 
 
 </head>
@@ -29,9 +29,9 @@
 					<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
 					<li>@Html.ActionLink("Acerca de", "About", "Home")</li>
 					<li>@Html.ActionLink("Estacionamiento", "Est", "Home")</li>
-					@if(Request.IsAuthenticated) {
+					
 					<li>@Html.ActionLink("Ingreso", "Index", "Estacionamientos")</li>
-					}
+					
 
 				</ul>
                 @Html.Partial("_LoginPartial")

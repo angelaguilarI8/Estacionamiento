@@ -35,11 +35,15 @@
         <td>
             @Html.DisplayFor(modelItem => item.Placas)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EstacionamientosID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EstacionamientosID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EstacionamientosID })
-        </td>
+		<td>
+			@if (Request.IsAuthenticated)
+			{
+			@Html.ActionLink("Edit", "Edit", new { id = item.EstacionamientosID }) 
+			@Html.ActionLink("Details", "Details", new { id = item.EstacionamientosID }) 
+			@Html.ActionLink("Delete", "Delete", new { id = item.EstacionamientosID })
+			}
+
+		</td>
     </tr>
 }
 

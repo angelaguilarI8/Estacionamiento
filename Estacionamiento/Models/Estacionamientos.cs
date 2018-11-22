@@ -11,7 +11,7 @@ namespace Estacionamiento.Models
     {
         public int EstacionamientosID { get; set; }
         [Required]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         [DisplayName("Create Date")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yy hh:mm}")]
         public DateTime Fecha { get; set; }
